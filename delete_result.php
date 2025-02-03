@@ -1,5 +1,5 @@
 ﻿<?php
-            $con=mysqli_connect("dbsrv.idcseoul.internal", "root", "", "sqlDB") or die("MySQL 접속 실패 !!");
+            $con=mysqli_connect("10.4.1.100", "user1", "qwe123", "sqlDB") or die("MySQL 접속 실패 !!");
             $userID = $_POST["userID"];              
             $sql ="DELETE FROM userTbl WHERE userID='".$userID."'";            
             $ret = mysqli_query($con, $sql);          

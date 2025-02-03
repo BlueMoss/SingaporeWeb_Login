@@ -1,5 +1,5 @@
 ﻿<?php
-            $con=mysqli_connect("dbsrv.idcsingapore.internal", "root", "", "sqlDB") or die("MySQL 접속 실패 !!");
+            $con=mysqli_connect("10.4.1.100", "root", "", "sqlDB") or die("MySQL 접속 실패 !!");
             mysqli_query($con, "set session character_set_connection=utf8;");
             mysqli_query($con, "set session character_set_results=utf8;");
             mysqli_query($con, "set session character_set_client=utf8;");
