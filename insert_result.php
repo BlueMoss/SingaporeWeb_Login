@@ -11,9 +11,9 @@
             $mobile1 = $_POST["mobile1"];
             $mobile2 = $_POST["mobile2"];
             $height = $_POST["height"];   
-            $mDate = date("Y-m-j");            
+            $mDATE = date("Y-m-j");            
             $sql =" INSERT INTO userTBL VALUES('".$userID."','".$name."',".$birthYear;
-            $sql = $sql.",'".$addr."','".$mobile1."','".$mobile2."',".$height.",'".$mDate."')";            
+            $sql = $sql.",'".$addr."','".$mobile1."','".$mobile2."',".$height.",'".$mDATE."')";            
             $ret = mysqli_query($con, $sql);          
               echo "<h1> 신규 회원 입력 결과 </h1>";
             if($ret) {
